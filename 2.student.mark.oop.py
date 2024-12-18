@@ -44,7 +44,7 @@ class school:
         found = False
         if student_id == "0":
             for s in self.students:
-                mark = (input(f"enter mark for {s.name} (id: {s.student_id}): "))
+                mark = float(input(f"enter mark for {s.name} (id: {s.student_id}): "))
                 self.marks[course_id][s.student_id] = mark
         else:
             for s in self.students:
